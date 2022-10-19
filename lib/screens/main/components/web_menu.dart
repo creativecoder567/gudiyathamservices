@@ -16,7 +16,14 @@ class WebMenu extends StatelessWidget {
           (index) => WebMenuItem(
             text: _controller.menuItems[index],
             isActive: index == _controller.selectedIndex,
-            press: () => _controller.setMenuIndex(index),
+            press: () {
+              _controller.setMenuIndex(index);
+              if(index==2){
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text("Services"),
+                ));
+              }
+            },
           ),
         ),
       ),

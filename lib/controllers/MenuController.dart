@@ -8,7 +8,7 @@ class MenuController extends GetxController {
 
   int get selectedIndex => _selectedIndex.value;
   List<String> get menuItems =>
-      ["Home", "About Us", "Services", "Bustimings", "Contact"];
+      ["Home", "About Us", "Services", "Bustimings","Blog", "Contact"];
   GlobalKey<ScaffoldState> get scaffoldkey => _scaffoldKey;
 
   void openOrCloseDrawer() {
