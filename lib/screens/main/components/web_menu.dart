@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:news/controllers/MenuController.dart';
 
 import '../../../constants.dart';
+import '../../services/services_screen.dart';
 
 class WebMenu extends StatelessWidget {
   final MenuController _controller = Get.put(MenuController());
@@ -22,6 +23,12 @@ class WebMenu extends StatelessWidget {
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                   content: Text("Services"),
                 ));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return ServicesScreen();
+                  }),
+                );
               }
             },
           ),
