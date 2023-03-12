@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "Welcome \nShishir",
+                    "Welcome \nFriend",
                     style: Theme.of(context)
                         .textTheme
                         .headline4
@@ -82,8 +82,8 @@ class HomeScreen extends StatelessWidget {
                       mainAxisSpacing: 20,
                       children: <Widget>[
                         CategoryCard(
-                          title: "Diet Recommendation",
-                          svgSrc: "assets/icons/Hamburger.svg",
+                          title: "Tractor",
+                          svgSrc: "assets/images/tractor.png",
                           press: () {
                             Navigator.push(
                               context,
@@ -94,13 +94,13 @@ class HomeScreen extends StatelessWidget {
                           },
                         ),
                         CategoryCard(
-                          title: "Kegel Exercises",
-                          svgSrc: "assets/icons/Excrecises.svg",
+                          title: "Van",
+                          svgSrc: "assets/images/van.png",
                           press: () {},
                         ),
                         CategoryCard(
-                          title: "Meditation",
-                          svgSrc: "assets/icons/Meditation.svg",
+                          title: "Auto",
+                          svgSrc: "assets/images/auto.png",
                           press: () {
                             Navigator.push(
                               context,
@@ -111,8 +111,8 @@ class HomeScreen extends StatelessWidget {
                           },
                         ),
                         CategoryCard(
-                          title: "Yoga",
-                          svgSrc: "assets/icons/yoga.svg",
+                          title: "Car",
+                          svgSrc: "assets/images/car.png",
                           press: () {},
                         ),
                       ],
