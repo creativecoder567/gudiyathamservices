@@ -5,7 +5,8 @@ import '../../constants.dart';
 import '../../widgets/bottom_nav_bar.dart';
 import '../../widgets/category_card.dart';
 import '../../widgets/search_bar.dart';
-
+import '../main/components/header.dart';
+import 'details_screen.dart';
 
 
 class ServicesScreen extends StatelessWidget {
@@ -51,6 +52,7 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
+                  // Header(),
                   Align(
                     alignment: Alignment.topRight,
                     child: Container(
@@ -82,7 +84,14 @@ class HomeScreen extends StatelessWidget {
                         CategoryCard(
                           title: "Diet Recommendation",
                           svgSrc: "assets/icons/Hamburger.svg",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return ServicesScreen();
+                              }),
+                            );
+                          },
                         ),
                         CategoryCard(
                           title: "Kegel Exercises",
@@ -93,12 +102,12 @@ class HomeScreen extends StatelessWidget {
                           title: "Meditation",
                           svgSrc: "assets/icons/Meditation.svg",
                           press: () {
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(builder: (context) {
-                            //     return DetailsScreen();
-                            //   }),
-                            // );
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return DetailsScreen();
+                              }),
+                            );
                           },
                         ),
                         CategoryCard(

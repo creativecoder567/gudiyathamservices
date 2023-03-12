@@ -6,7 +6,7 @@ import '../constants.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
-    required Key key,
+     Key? key,
   }) : super(key: key);
 
   @override
@@ -18,7 +18,7 @@ class BottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-         /* BottomNavItem(
+      /*    BottomNavItem(
             title: "Today",
             svgScr: "assets/icons/calendar.svg", press: null,
           ),
