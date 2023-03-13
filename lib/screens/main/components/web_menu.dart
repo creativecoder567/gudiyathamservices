@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:news/controllers/MenuController.dart';
-
+import '../../bus/bus.dart';
 import '../../../constants.dart';
 import '../../services/services_screen.dart';
 
@@ -27,6 +27,14 @@ class WebMenu extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) {
                     return ServicesScreen();
+                  }),
+                );
+              }
+              if(index==3){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return BusTimingsScreen();
                   }),
                 );
               }
