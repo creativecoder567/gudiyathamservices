@@ -30,6 +30,9 @@ dependencies:
 
   flutter_svg: ^1.0.3
   get: ^4.6.1
+  email_validator: ^2.0.1
+  firebase_core: ^2.8.0
+  carousel_slider: ^4.0.0
 
 dev_dependencies:
   flutter_test:

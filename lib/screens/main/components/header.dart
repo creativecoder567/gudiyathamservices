@@ -52,7 +52,7 @@ class Header extends StatelessWidget {
                       Socal(),
                     ],
                   ),
-                  SizedBox(height: kDefaultPadding * 2),
+             /*     SizedBox(height: kDefaultPadding * 2),
                   Text(
                     "Welcome to Our Blog",
                     style: TextStyle(
@@ -96,7 +96,7 @@ class Header extends StatelessWidget {
                     ),
                   ),
                   if (Responsive.isDesktop(context))
-                    SizedBox(height: kDefaultPadding),
+                    SizedBox(height: kDefaultPadding),*/
                 ],
               ),
             )
