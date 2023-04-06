@@ -30,12 +30,12 @@ class SideMenu extends StatelessWidget {
                   title: _controller.menuItems[index],
                   press: () {
                     _controller.setMenuIndex(index);
-                    if(index==2){
+                   /* if(index==2){
                       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                         content: Text("Services"),
                       ));
                       _controller.openOrCloseDrawer();
-                    }
+                    }*/
                   },
                 ),
               ),

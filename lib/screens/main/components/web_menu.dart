@@ -20,7 +20,7 @@ class WebMenu extends StatelessWidget {
             isActive: index == _controller.selectedIndex,
             press: () {
               _controller.setMenuIndex(index);
-              if(index==2){
+             /* if(index==2){
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                   content: Text("Services"),
                 ));
@@ -30,8 +30,8 @@ class WebMenu extends StatelessWidget {
                     return ServicesScreen();
                   }),
                 );
-              }
-              if(index==3){
+              }*/
+              if(index==2){
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) {
@@ -39,7 +39,7 @@ class WebMenu extends StatelessWidget {
                   }),
                 );
               }
-              if(index==5){
+              if(index==4){
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) {
