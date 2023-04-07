@@ -20,6 +20,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<Image> images = [
+      Image.asset("assets/images/tractor.png"),
+      Image.asset("assets/images/van.png"),
+      Image.asset("assets/images/car.png"),
+      Image.asset("assets/images/auto.png"),
+    ];
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -36,41 +42,57 @@ class HomeScreen extends StatelessWidget {
             child: Column(
           children: [
             CarouselSlider(
-              items: <Widget>[
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.yellow,
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                ),
-              ],
+              items: images,
               options: CarouselOptions(
-                height: 200.0,
+                height: 200,
                 enlargeCenterPage: true,
                 autoPlay: true,
-                autoPlayInterval: Duration(seconds: 3),
+                aspectRatio: 16 / 9,
                 autoPlayCurve: Curves.fastOutSlowIn,
+                enableInfiniteScroll: true,
+                autoPlayAnimationDuration: Duration(milliseconds: 800),
+                viewportFraction: 0.8,
               ),
             ),
-            SizedBox(height: 10,),
+
+            // CarouselSlider(
+            //   items: <Widget>[
+            //     Container(
+            //       decoration: BoxDecoration(
+            //         color: Colors.red,
+            //         borderRadius: BorderRadius.circular(8.0),
+            //       ),
+            //     ),
+            //     Container(
+            //       decoration: BoxDecoration(
+            //         color: Colors.green,
+            //         borderRadius: BorderRadius.circular(8.0),
+            //       ),
+            //     ),
+            //     Container(
+            //       decoration: BoxDecoration(
+            //         color: Colors.blue,
+            //         borderRadius: BorderRadius.circular(8.0),
+            //       ),
+            //     ),
+            //     Container(
+            //       decoration: BoxDecoration(
+            //         color: Colors.yellow,
+            //         borderRadius: BorderRadius.circular(8.0),
+            //       ),
+            //     ),
+            //   ],
+            //   options: CarouselOptions(
+            //     height: 200.0,
+            //     enlargeCenterPage: true,
+            //     autoPlay: true,
+            //     autoPlayInterval: Duration(seconds: 3),
+            //     autoPlayCurve: Curves.fastOutSlowIn,
+            //   ),
+            // ),
+            SizedBox(
+              height: 10,
+            ),
             Container(
               height: 500,
               child: GridView.count(
@@ -78,44 +100,24 @@ class HomeScreen extends StatelessWidget {
                 childAspectRatio: .85,
                 crossAxisSpacing: 20,
                 mainAxisSpacing: 20,
-                children: <Widget>[
-                  CategoryCard(
-                    title: "Tractor",
-                    svgSrc: "assets/images/tractor.png",
-                    press: () {
+                children: List.generate(4, (index) {
+                  return GestureDetector(
+                    onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) {
-                          return ServicesScreen();
-                        }),
+                        MaterialPageRoute(
+                            builder: (context) => ServicesScreen()),
                       );
                     },
-                  ),
-                  CategoryCard(
-                    title: "Van",
-                    svgSrc: "assets/images/van.png",
-                    press: () {},
-                  ),
-                  CategoryCard(
-                    title: "Auto",
-                    svgSrc: "assets/images/auto.png",
-                    press: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) {
-                          return DetailsScreen();
-                        }),
-                      );
-                    },
-                  ),
-                  CategoryCard(
-                    title: "Car",
-                    svgSrc: "assets/images/car.png",
-                    press: () {},
-                  ),
-                ],
+                    child: CategoryCard(
+                      title: "Van",
+                      svgSrc: "assets/images/van.png",
+                      press: () {},
+                    ),
+                  );
+                }),
               ),
-            ),
+            )
           ],
         )),
 
