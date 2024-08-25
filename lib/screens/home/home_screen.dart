@@ -55,41 +55,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            // CarouselSlider(
-            //   items: <Widget>[
-            //     Container(
-            //       decoration: BoxDecoration(
-            //         color: Colors.red,
-            //         borderRadius: BorderRadius.circular(8.0),
-            //       ),
-            //     ),
-            //     Container(
-            //       decoration: BoxDecoration(
-            //         color: Colors.green,
-            //         borderRadius: BorderRadius.circular(8.0),
-            //       ),
-            //     ),
-            //     Container(
-            //       decoration: BoxDecoration(
-            //         color: Colors.blue,
-            //         borderRadius: BorderRadius.circular(8.0),
-            //       ),
-            //     ),
-            //     Container(
-            //       decoration: BoxDecoration(
-            //         color: Colors.yellow,
-            //         borderRadius: BorderRadius.circular(8.0),
-            //       ),
-            //     ),
-            //   ],
-            //   options: CarouselOptions(
-            //     height: 200.0,
-            //     enlargeCenterPage: true,
-            //     autoPlay: true,
-            //     autoPlayInterval: Duration(seconds: 3),
-            //     autoPlayCurve: Curves.fastOutSlowIn,
-            //   ),
-            // ),
             SizedBox(
               height: 10,
             ),
