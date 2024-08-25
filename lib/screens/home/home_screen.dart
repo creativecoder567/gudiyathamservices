@@ -1,5 +1,5 @@
 import 'package:carousel_slider/carousel_options.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+// import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:news/constants.dart';
 import 'package:news/models/Blog.dart';
@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
         Flexible(
             child: Column(
           children: [
-            CarouselSlider(
+          /*  CarouselSlider(
               items: images,
               options: CarouselOptions(
                 height: 200,
@@ -53,7 +53,7 @@ class HomeScreen extends StatelessWidget {
                 autoPlayAnimationDuration: Duration(milliseconds: 800),
                 viewportFraction: 0.8,
               ),
-            ),
+            ),*/
 
             SizedBox(
               height: 10,

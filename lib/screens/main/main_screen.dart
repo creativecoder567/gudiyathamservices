@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:news/controllers/MenuController.dart';
+import 'package:news/controllers/MenuController.dart' as customMenu;
 import 'package:news/screens/home/home_screen.dart';
 
 import '../../constants.dart';
@@ -8,7 +8,7 @@ import 'components/header.dart';
 import 'components/side_menu.dart';
 
 class MainScreen extends StatelessWidget {
-  final MenuController _controller = Get.put(MenuController());
+  final customMenu.MenuController _controller = Get.put(customMenu.MenuController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(

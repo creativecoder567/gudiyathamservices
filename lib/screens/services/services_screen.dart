@@ -70,10 +70,10 @@ class HomeScreen extends StatelessWidget {
                     "Welcome \nFriend",
                     style: Theme.of(context)
                         .textTheme
-                        .headline4
+                        .headlineMedium
                         // .copyWith(fontWeight: FontWeight.w900),
                   ),
-                  SearchBar(),
+                  // SearchBar(),/
                   Expanded(
                     child: GridView.count(
                       crossAxisCount: 2,

@@ -54,7 +54,7 @@ class DetailsScreen extends StatelessWidget {
                     ),
                     SizedBox(
                       width: size.width * .5, // it just take the 50% width
-                      child: SearchBar(),
+                      // child: SearchBar(),
                     ),
                     Wrap(
                       spacing: 20,
@@ -92,7 +92,7 @@ class DetailsScreen extends StatelessWidget {
                       "Meditation",
                       style: Theme.of(context)
                           .textTheme
-                          .headline4
+                          .headlineMedium
                           // .copyWith(fontWeight: FontWeight.bold),
                     ),
                     Container(

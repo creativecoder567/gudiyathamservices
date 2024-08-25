@@ -9,7 +9,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
@@ -22,9 +21,9 @@ class MyApp extends StatelessWidget {
           style: TextButton.styleFrom(backgroundColor: kPrimaryColor),
         ),
         textTheme: TextTheme(
-          bodyText1: TextStyle(color: kBodyTextColor),
-          bodyText2: TextStyle(color: kBodyTextColor),
-          headline5: TextStyle(color:  kDarkBlackColor),
+          bodyLarge: TextStyle(color: kBodyTextColor),
+          bodyMedium: TextStyle(color: kBodyTextColor),
+          headlineSmall: TextStyle(color: kDarkBlackColor),
         ),
       ),
       home: MainScreen(),
