@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../constants.dart';
-import '../../widgets/bottom_nav_bar.dart';
 import '../../widgets/category_card.dart';
-import '../../widgets/search_bar.dart';
-import '../main/components/header.dart';
 import 'details_screen.dart';
 
 

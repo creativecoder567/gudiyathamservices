@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../constants.dart';
 import '../../widgets/bottom_nav_bar.dart';
-import '../../widgets/search_bar.dart';
 
 class DetailsScreen extends StatelessWidget {
   @override
